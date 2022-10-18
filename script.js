@@ -27,5 +27,14 @@ function assignValues(){
     console.log(`compAssignedValue = ${compAssignedValue}`);
 }
 
+// Make function that captures user's input from on-screen dialogue
+function getPlayerSelection(){
+    const playerInput = prompt("Choose between rock, paper or scissors");
+    // Bump all characters to uppercase, eliminating user based ambiguities on input
+    const playerSelection = playerInput.toUpperCase();
+    console.log(`playerSelection = ${playerSelection}`);
+}
+
 
 getComputerChoice();
+getPlayerSelection();
